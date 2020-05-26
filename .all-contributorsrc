@@ -1,0 +1,51 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "WuZhuoran",
+      "name": "Wu Zhuoran",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8717187?v=4",
+      "profile": "http://oliverwu.georgetown.domains/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hx8888979",
+      "name": "hx8888979",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/40686819?v=4",
+      "profile": "https://github.com/hx8888979",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "GreenDragonInSea",
+      "name": "Chen Yangjun",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/52992450?v=4",
+      "profile": "https://github.com/GreenDragonInSea",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Aworilri",
+      "name": "Aworilri",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/63013240?v=4",
+      "profile": "https://github.com/Aworilri",
+      "contributions": [
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "MB2CommunityEditor",
+  "projectOwner": "YiGu-Studio",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
