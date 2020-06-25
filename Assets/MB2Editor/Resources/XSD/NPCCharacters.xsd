@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NPCCharacters" 
+  xmlns="" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="equipment">
+    <xs:complexType>
+      <xs:attribute name="slot" type="xs:string" />
+      <xs:attribute name="id" type="xs:string" />
+      <xs:attribute name="amount" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NPCCharacters" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="equipment" />
+        <xs:element name="NPCCharacter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="face" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="face_key" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="value" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="max_value" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="BodyProperties" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="version" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="age" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="weight" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="build" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="key" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="BodyPropertiesMax" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="version" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="age" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="weight" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="build" use="optional">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="key" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="face_key_template" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="value" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="hair_tags" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="hair_tag" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="name" use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="beard_tags" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="beard_tag" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="name" use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="tattoo_tags" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="tattoo_tag" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="name" use="required">
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string" />
+                                </xs:simpleType>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Hero" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="banner_key" type="xs:string" use="optional"/>
+                  <xs:attribute name="is_noble" type="xs:string" use="optional" />
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                  <xs:attribute name="text" type="xs:string" use="optional" />
+                  <xs:attribute name="spouse" type="xs:string" use="optional"/>
+                  <xs:attribute name="alive" type="xs:string" use="optional"/>
+                  <xs:attribute name="voice" type="xs:string" use="optional"/>
+                  <xs:attribute name="father" type="xs:string" use="optional"/>
+                  <xs:attribute name="mother" type="xs:string" use="optional"/>
+                  <xs:attribute name="faction">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="Faction\..+"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute name="clan" use="optional">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:pattern value="Clan\..+"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Components" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Companion" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Lord" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="banner_key" type="xs:string" use="optional"/>
+                        <xs:attribute name="spouse" type="xs:string" use="optional"/>
+                        <xs:attribute name="voice" type="xs:string" use="optional"/>
+                        <xs:attribute name="father" type="xs:string" use="optional"/>
+                        <xs:attribute name="mother" type="xs:string" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="skills" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="skill" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="value" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Traits" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Trait" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="value" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="feats" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="feat" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string" />
+                          </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="value" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="equipmentSet" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="equipment" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                  <xs:attribute name="civilian" type="xs:string" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element ref="equipment" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="upgrade_targets" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="upgrade_target" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="id" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:pattern value="NPCCharacter\..+"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="default_group" type="xs:string" />
+            <xs:attribute name="voice" type="xs:string" use="optional"/>
+            <xs:attribute name="is_hero" type="xs:string" />
+            <xs:attribute name="is_female" type="xs:string" />
+            <xs:attribute name="is_basic_troop" type="xs:string" use="optional"/>
+            <xs:attribute name="is_template" type="xs:boolean" use="optional"/>
+            <xs:attribute name="is_child_template" type="xs:boolean" use="optional"/>
+            <xs:attribute name="culture">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="Culture\..+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="banner_symbol_mesh_name" type="xs:string" />
+            <xs:attribute name="banner_symbol_color" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="(0x|0X)?([a-fA-F0-9]{2})+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="banner_key" type="xs:string" />
+            <xs:attribute name="occupation" type="xs:string" />
+            <xs:attribute name="civilianTemplate" type="xs:string" use="optional"/>
+            <xs:attribute name="battleTemplate" type="xs:string" use="optional"/>
+            <xs:attribute name="is_companion" type="xs:string" />
+            <xs:attribute name="offset" type="xs:string" />
+            <xs:attribute name="level" type="xs:string" />
+            <xs:attribute name="age" type="xs:string" />
+            <xs:attribute name="is_mercenary" type="xs:string" />
+            <xs:attribute name="formation_position_preference" type="xs:string" />
+            <xs:attribute name="default_equipment_set" type="xs:string" use="optional"/>
+            <xs:attribute name="skill_template" type="xs:string" use="optional"/>
+            <!-- <xs:attribute name="face_key_template" use="optional"> -->
+            <!-- <xs:simpleType> -->
+            <!-- <xs:restriction base="xs:string"> -->
+            <!-- <xs:pattern value="NPCCharacter\..+"/> -->
+            <!-- </xs:restriction> -->
+            <!-- </xs:simpleType> -->
+            <!-- </xs:attribute> -->
+            <xs:attribute name="upgrade_requires" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="ItemCategory\..+"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
