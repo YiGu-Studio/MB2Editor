@@ -2,15 +2,22 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-A **community-driven**, **open-source**, **Unity3D based** Mount &amp; Blade II : BannerLord module Editor
+
+A **community-driven**, **open-source**, **Unity3D based** Mount &amp; Blade II : BannerLord module Editor.
 
 ## Feature list
 
-* Module Data Visual Editor (**WIP**)
-* Drag/Drop Modify Tool
-* Character/Item/Model Preview
-* Troop Tree Preview
-* Build Pipline (build/debug/deployment)
+* Module Data Visual Editor.   
+  Allow users to import MB2 `xsd` files and edit values. Users can modify values by Draging/Droping.
+
+* Character/Item/Model Preview.    
+  Preview the models of each Character, Item in Editor.
+  
+* Troop Tree Preview.    
+  Preview the whole Troop Tree and Modify Detail information for each Troop.
+  
+* Build Pipline (build/debug/deployment).    
+  Users can easily create and build Module in Editor. No more codes needed.
 
 ## Preview
 
