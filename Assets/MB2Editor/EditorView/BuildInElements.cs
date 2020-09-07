@@ -19,6 +19,7 @@ namespace MB2Editor.EditorView
         /// <param name="element">the element name</param>
         /// <param name="isGlobal">whether register the view as a global view. apply it for all elements with same name if no specific view in its' namespace</param>
         public ElementViewRegistry(string nameSpace, string element, bool isGlobal) => (this.nameSpace, this.element, this.isGlobal) = (nameSpace, element, isGlobal);
+        public ElementViewRegistry(string element) => (this.nameSpace, this.element, this.isGlobal) = (null, element, true);
     }
 
     public interface MB2CustomEditorView

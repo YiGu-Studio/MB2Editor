@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using MB2Editor.Model;
-
+using System;
 
 namespace MB2Editor.EditorView
 {
@@ -16,7 +16,7 @@ namespace MB2Editor.EditorView
         ElementConfig elementConfig;
         string[] baseModels;
         string filter;
-
+        bool isExpanded = true;
 
         public string GetData()
         {
@@ -69,6 +69,19 @@ namespace MB2Editor.EditorView
         public void OnGUI()
         {
             //TODO: may have GUI later
+            isExpanded = EditorGUILayout.BeginFoldoutHeaderGroup(isExpanded, elementConfig.RenderName);
+            EditorGUILayout.EndFoldoutHeaderGroup();
+            if (isExpanded)
+            {
+                EditorGUI.indentLevel++;
+                foreach (var baseModel in baseModels)
+                {
+                    BaseModel model = AssetDatabase.LoadAssetAtPath<BaseModel>(AssetDatabase.GUIDToAssetPath(baseModel));
+                    EditorGUILayout.ObjectField(model.name, model, typeof(BaseModel),false);
+                }
+                EditorGUI.indentLevel--;
+            }
+            Resources.UnloadUnusedAssets();
         }
 
         public void ForceUpdate()
