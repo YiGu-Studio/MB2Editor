@@ -19,6 +19,16 @@ A **community-driven**, **open-source**, **Unity3D based** Mount &amp; Blade II 
 * Build Pipline (build/debug/deployment).    
   Users can easily create and build Module in Editor. No more codes needed.
 
+* Extensionalable Customized data sets.    
+  Users can easily edit varieties of data set (different data structures) with just offering XSD file
+
+* Extensionalable Customized Editor component.       
+  Allow users to extend themselves editor components for the different data sets.
+  Eg. Face editor, to edit face visually instead of giving unreadable data directly
+
+* Project file management.       
+  User can manage different types of file in their model project easily with access to folder-based file system and version control
+
 ## Preview
 
 ### Module Data Editor (Character)
