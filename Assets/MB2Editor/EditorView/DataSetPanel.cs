@@ -48,7 +48,10 @@ namespace MB2Editor.EditorView
             }
             else
             {
-
+                foreach(var datasetView in datasetViews)
+                {
+                    datasetView.OnGUI();
+                }
             }
         }
 
@@ -75,13 +78,13 @@ namespace MB2Editor.EditorView
                 if(ConfigManager.GetConfig(model.NameSpace, out config))
                 {
                     //TODO: need cache view here for perfermance
-                    var supportDataSet = config.Datasets.Where((element) => element.NestedElements.Any((nestedElement) => nestedElement.Equals(model.name)));
+                    var supportDataSet = config.Datasets.Where((element) => element.NestedElements.Any((nestedElement) => nestedElement.Name.Equals(model.element)));
                     datasetViews = supportDataSet.Select((dataset) =>
                     {
                         MB2CustomEditorView view;
                         if (!ElementViewManager.GetView(dataset.Name, out view))
                         {
-                            view = new NotSupportView();
+                            view = new DataSetView();
                         }
                         view.Init(dataset);
                         return view;
@@ -102,6 +105,8 @@ namespace MB2Editor.EditorView
                     notSupport = EditorNotSupport.NoView;
                 }
             }
+
+            Repaint();
         }
     }
 }
