@@ -1,6 +1,6 @@
 # Mount &amp; Blade II : BannerLord Community Editor
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A **community-driven**, **open-source**, **Unity3D based** Mount &amp; Blade II : BannerLord module Editor.
@@ -65,6 +65,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/hx8888979"><img src="https://avatars0.githubusercontent.com/u/40686819?v=4" width="100px;" alt=""/><br /><sub><b>hx8888979</b></sub></a><br /><a href="https://github.com/YiGu-Studio/MB2CommunityEditor/commits?author=hx8888979" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/GreenDragonInSea"><img src="https://avatars1.githubusercontent.com/u/52992450?v=4" width="100px;" alt=""/><br /><sub><b>Chen Yangjun</b></sub></a><br /><a href="https://github.com/YiGu-Studio/MB2CommunityEditor/commits?author=GreenDragonInSea" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Aworilri"><img src="https://avatars2.githubusercontent.com/u/63013240?v=4" width="100px;" alt=""/><br /><sub><b>Aworilri</b></sub></a><br /><a href="#design-Aworilri" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/aloha2020"><img src="https://avatars1.githubusercontent.com/u/63624152?v=4" width="100px;" alt=""/><br /><sub><b>aloha</b></sub></a><br /><a href="https://github.com/YiGu-Studio/MB2CommunityEditor/commits?author=aloha2020" title="Code">💻</a></td>
   </tr>
 </table>
 
